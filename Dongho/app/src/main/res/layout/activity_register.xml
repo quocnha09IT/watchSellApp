@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/email_customer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trang"
+    tools:context=".register">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="80dp"
+        android:text="Register"
+        android:textColor="#D38717"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_customer"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        android:textColor="#BF0F0F"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/email_customer1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        android:textColor="#DF1010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_customer" />
+
+    <EditText
+
+        android:hint="password"
+        android:id="@+id/password_customer"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        android:text=""
+        android:textColor="#D30C0C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_customer1" />
+
+    <EditText
+        android:id="@+id/phone_customer"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        android:textColor="#D31212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_customer" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#0DD4ED"
+
+        android:text="Register"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_customer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

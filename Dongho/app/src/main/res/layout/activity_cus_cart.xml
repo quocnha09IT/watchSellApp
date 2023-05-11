@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cus_cart"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <Toolbar
+        android:title="CART"
+        android:background="#13B4C8"
+        android:titleTextColor="#EA900C"
+        android:id="@+id/toolbarCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_cart"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btThanhtoan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="thanh toan "
+        android:textSize="20sp">
+
+    </Button>
+
+</LinearLayout>

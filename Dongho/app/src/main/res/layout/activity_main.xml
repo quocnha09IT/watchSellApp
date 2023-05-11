@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:openDrawer="start"
+        >
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerble_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbartrangchinh1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#13C6DD"
+                    app:title="Trang chu">
+
+                    <Button
+                        android:text="Find"
+                        android:backgroundTint="@color/black"
+                        android:layout_marginLeft="170dp"
+                        android:id="@+id/btn_search"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp" />
+
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <ViewFlipper
+                android:id="@+id/viewlipper1"
+                android:layout_width="match_parent"
+                android:layout_height="224dp">
+
+            </ViewFlipper>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="280dp"
+            android:background="#13C6DD"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="10dp"
+                android:text="Sản phẩm mới nhất"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navi1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+            <ListView
+                android:id="@+id/listview_category1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+
+        </com.google.android.material.navigation.NavigationView>
+
+  <!--  <ListView
+        android:id="@+id/listviewmanhinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>-->
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>
